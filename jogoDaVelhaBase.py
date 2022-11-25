@@ -154,6 +154,8 @@ while not acabou:
     rodada += 1
     tabuleiro = jogadaMaquina(tabuleiro, rodada)
     acabou = confereFim(tabuleiro, "X")
+    if acabou :
+        break
     imprimiTabuleiro(tabuleiro)
     tabuleiro = jogada(tabuleiro)
     acabou = confereFim(tabuleiro, "O")
